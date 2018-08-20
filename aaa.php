@@ -4,6 +4,7 @@ $json_url = "https://localhost:8080/report/thresholds/1";
 $json = file_get_contents($json_url);
 //$data=array();
 $data[] = json_decode($json,TRUE);
+
 echo "---------------------------------------";
 echo "<pre>";
 print_r($data);
@@ -17,5 +18,6 @@ echo $da['Heat Treatment']['T2']['if_crossed_threshold']." - ".$da['Heat Treatme
 echo "<br>".$i."<br>";
 $i++;
 }
+echo "---------------------------------------";
 
 ?>
